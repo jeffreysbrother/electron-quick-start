@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "package": "asar pack MyApp.app-darwin-x64/Contents/Resources/app MyApp.app-darwin-x64/Contents/Resources/app.asar",
     "build": "electron-packager . MyApp --ignore-node_modules/electron-*"
   },
   "repository": {
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/electron/electron-quick-start#readme",
   "devDependencies": {
+    "asar": "^0.12.3",
     "electron-packager": "^8.1.0",
     "electron-prebuilt": "^1.4.2"
   }
